@@ -25,7 +25,7 @@ export default function Header() {
 
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl">
-          Repositori Website Mahasiswa
+          Halaman ini dibuat, khusus mengumpulkan website portfolio UAS mahasiswa
         </h1>
         <p className="mt-4 text-lg text-slate-600">
           Kumpulan Portfolio semester 1 dan PDF dari <span className="font-bold text-indigo-600">32 Mahasiswa</span>

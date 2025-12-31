@@ -221,8 +221,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 32,
     nama: "TIRA MUTIAR",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO31",
-    urlPdf: "#",
+    nim: "251011700501",
+    urlWebsite: "https://tiramutiar.github.io/UAS_251011700501_TIRAMUTIAR/",
+    urlPdf: "/pdf/UAS_251011700501_Tira_Mutiar.pdf",
   },
 ];

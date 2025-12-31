@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #4f46e5;
+}
+
+:root {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body {
+  font-family: var(--font-sans);
+
+  @apply antialiased;
+}

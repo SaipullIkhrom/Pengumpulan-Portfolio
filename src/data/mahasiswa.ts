@@ -110,7 +110,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 16,
     nama: "HANI ULANDARI",
     nim: "251011700506",
-    urlWebsite: "https://saipullikhrom.github.io/Portfolio-Tailwind/",
+    urlWebsite: "#",
     urlPdf: "#",
   },
   {

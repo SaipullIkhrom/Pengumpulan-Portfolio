@@ -62,7 +62,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     nama: "ARYA PUTRA",
     nim: "251011700542",
     urlWebsite: "https://aryaputra-ctrl.github.io/251011700542_AryaPutra_ProjectUAS_PORTPOLIO9/",
-    urlPdf: "#",
+    urlPdf: "/pdf/UAS_251011700542_Arya_Putra.pdf",
   },
   {
     id: 10,
@@ -167,7 +167,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     nama: "MUHAMMAD SAIPUL IKHROM",
     nim: "251011701055",
     urlWebsite: "https://saipullikhrom.github.io/Portfolio-UAS-Semester1/",
-    urlPdf: "/pdf/UAS_251011701055_MUHAMMAD_SAIPUL_IKHROM.pdf",
+    urlPdf: "/pdf/UAS_251011701055_Muhammad_Saipul_Ikhrom.pdf",
   },
   {
     id: 25,

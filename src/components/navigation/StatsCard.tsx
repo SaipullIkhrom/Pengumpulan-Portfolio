@@ -11,7 +11,6 @@ interface StatsCardProps {
 }
 
 export function StatsCard({ label, percentage, count, total, color }: StatsCardProps) {
-  // Animasi untuk angka persentase
   const countValue = useMotionValue(0);
   const rounded = useTransform(countValue, (latest) => Math.round(latest));
 

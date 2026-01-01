@@ -19,8 +19,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 3,
     nama: "ADHITYA WIJAYA",
     nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO3",
-    urlPdf: "#",
+    urlWebsite: "https://itsmeadhityaaa.github.io/porto1-adhitya-wijaya/",
+    urlPdf: "/pdf/UAS_251011700562_ADHITYA_WIJAYA.pdf",
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     nama: "FAYASHA NADIRA PADRI",
     nim: "251011700523",
     urlWebsite: "https://fayahsanadira.github.io/Portofolio-Fayashanadirapadri/",
-    urlPdf: "#",
+    urlPdf: "pdf/UAS_251011700523_Fayasha_Nadira_Padri.pdf",
   },
   {
     id: 14,

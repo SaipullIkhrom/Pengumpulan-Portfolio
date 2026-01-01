@@ -42,7 +42,7 @@ export default function Header({ dataMahasiswa }: HeaderProps) {
           Portfolio UAS Mahasiswa
         </h1>
         
-        {/* Kontainer Stats yang Terpisah */}
+        {/* Kontainer Stats */}
         <div className="flex flex-row gap-4 max-w-md mx-auto mb-8">
           <StatsCard 
             label="Website" 

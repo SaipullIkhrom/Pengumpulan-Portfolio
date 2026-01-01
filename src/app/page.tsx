@@ -21,7 +21,7 @@ export default function Home() {
 return (
     <main className="min-h-screen bg-slate-50 py-16 px-6">
       <div className="max-w-7xl mx-auto space-y-12">
-        <Header />
+       <Header dataMahasiswa={daftarMahasiswa} />
         <SearchBar value={searchTerm} onChange={setSearchTerm} />
         <MahasiswaGrid data={filteredMahasiswa} searchTerm={searchTerm} />
         <Footer />

@@ -166,8 +166,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 24,
     nama: "MUHAMMAD SAIPUL IKHROM",
     nim: "251011701055",
-    urlWebsite: "https://saipullikhrom.github.io/Portfolio-Saipul/",
-    urlPdf: "#",
+    urlWebsite: "https://saipullikhrom.github.io/Portfolio-UAS-Semester1/",
+    urlPdf: "/pdf/UAS_251011701055_MUHAMMAD_SAIPUL_IKHROM.pdf",
   },
   {
     id: 25,

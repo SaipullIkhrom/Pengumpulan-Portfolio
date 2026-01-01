@@ -10,12 +10,21 @@ interface StatsCardProps {
   color: "indigo" | "emerald";
 }
 
-export function StatsCard({ label, percentage, count, total, color }: StatsCardProps) {
+export function StatsCard({
+  label,
+  percentage,
+  count,
+  total,
+  color,
+}: StatsCardProps) {
   const countValue = useMotionValue(0);
   const rounded = useTransform(countValue, (latest) => Math.round(latest));
 
   useEffect(() => {
-    const controls = animate(countValue, percentage, { duration: 1.5, ease: "easeOut" });
+    const controls = animate(countValue, percentage, {
+      duration: 1.5,
+      ease: "easeOut",
+    });
     return controls.stop;
   }, [percentage, countValue]);
 
@@ -23,7 +32,7 @@ export function StatsCard({ label, percentage, count, total, color }: StatsCardP
   const bgColor = color === "indigo" ? "bg-indigo-500" : "bg-emerald-500";
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
@@ -32,13 +41,17 @@ export function StatsCard({ label, percentage, count, total, color }: StatsCardP
       <p className="text-[8px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1 text-center sm:text-left">
         {label}
       </p>
-      
+
       <div className="flex flex-col sm:flex-row items-center sm:items-end gap-1 sm:gap-2 justify-center sm:justify-start">
         <div className="flex items-start">
-          <motion.span className={`text-2xl sm:text-3xl font-black ${textColor}`}>
+          <motion.span
+            className={`text-2xl sm:text-3xl font-black ${textColor}`}
+          >
             {rounded}
           </motion.span>
-          <span className={`text-xs sm:text-sm font-bold mt-1 ${textColor}`}>%</span>
+          <span className={`text-xs sm:text-sm font-bold mt-1 ${textColor}`}>
+            %
+          </span>
         </div>
         <span className="text-[10px] sm:text-xs text-slate-400 mb-1 sm:mb-1.5 font-medium">
           {count}/{total}
@@ -47,7 +60,7 @@ export function StatsCard({ label, percentage, count, total, color }: StatsCardP
 
       {/* Progress Bar Animasi */}
       <div className="w-full bg-slate-100 h-1.5 rounded-full mt-2 overflow-hidden">
-        <motion.div 
+        <motion.div
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}

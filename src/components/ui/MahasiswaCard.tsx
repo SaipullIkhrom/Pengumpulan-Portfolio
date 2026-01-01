@@ -1,7 +1,7 @@
 "use client";
 
 import { Mahasiswa } from "@/types";
-import { Globe, ArrowRight, Download, Info } from "lucide-react";
+import { Globe, ArrowRight, Info, User } from "lucide-react"; // Menambahkan User icon untuk variasi
 import { motion, Variants } from "framer-motion";
 
 export default function MahasiswaCard({
@@ -16,7 +16,6 @@ export default function MahasiswaCard({
       mhs.urlWebsite !== "#" &&
       !mhs.urlWebsite.includes("example.com")
   );
-  const isPdfValid = Boolean(mhs?.urlPdf && mhs.urlPdf !== "#");
 
   const containerVariants: Variants = {
     initial: { opacity: 0, y: 20 },
@@ -72,8 +71,9 @@ export default function MahasiswaCard({
         </div>
       </div>
 
-      {/* Action Buttons */}
+      {/* Action & Info Area */}
       <div className="flex flex-col gap-2 sm:gap-3 relative">
+        {/* Tombol Website */}
         <a
           href={isWebsiteValid ? mhs.urlWebsite : "#"}
           target={isWebsiteValid ? "_blank" : "_self"}
@@ -87,30 +87,16 @@ export default function MahasiswaCard({
         >
           <div className="flex items-center gap-1.5 sm:gap-2">
             <Globe className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{isWebsiteValid ? "Website" : "Kosong"}</span>
+            <span>{isWebsiteValid ? "Kunjungi Website" : "Web Tidak Tersedia"}</span>
           </div>
           <ArrowRight className="hidden sm:block w-4 h-4" />
         </a>
 
-        <a
-          href={isPdfValid ? mhs.urlPdf : "#"}
-          target={isPdfValid ? "_blank" : "_self"}
-          onClick={(e) => handleButtonClick(e, isPdfValid)}
-          className={`flex items-center justify-center gap-1.5 sm:gap-2 w-full py-2 sm:py-3 rounded-xl sm:rounded-2xl border font-bold transition-all text-[10px] sm:text-sm ${
-            isPdfValid
-              ? "border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-indigo-100"
-              : "bg-slate-50 border-slate-100 text-slate-300 cursor-not-allowed shadow-none"
-          }`}
-        >
-          <Download
-            className={`w-3 h-3 sm:w-4 sm:h-4 ${
-              isPdfValid
-                ? "text-slate-400 group-hover:text-indigo-500"
-                : "text-slate-200"
-            }`}
-          />
-          <span>{isPdfValid ? "PDF" : "N/A"}</span>
-        </a>
+        {/* Teks Informasi (Pengganti PDF) */}
+        <div className="flex items-center justify-center gap-1.5 sm:gap-2 w-full py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-slate-100 bg-slate-50/50 text-[10px] sm:text-sm text-slate-500">
+          <User className="w-3 h-3 sm:w-4 sm:h-4 text-slate-400" />
+          <span className="font-medium">Informasi Mahasiswa</span>
+        </div>
       </div>
 
       <div className="absolute inset-0 bg-linear-to-tr from-transparent via-transparent to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />

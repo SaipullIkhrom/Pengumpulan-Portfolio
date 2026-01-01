@@ -2,7 +2,7 @@
 
 import { Mahasiswa } from "@/types";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, User, Globe, FileText, ExternalLink } from "lucide-react";
+import { X, User, Globe, ExternalLink } from "lucide-react";
 
 interface DetailModalProps {
   mhs: Mahasiswa | null;
@@ -22,7 +22,6 @@ export default function DetailModal({
     mhs.urlWebsite &&
     mhs.urlWebsite !== "#" &&
     !mhs.urlWebsite.includes("example.com");
-  const isPdfValid = mhs.urlPdf && mhs.urlPdf !== "#";
 
   return (
     <AnimatePresence>
@@ -112,29 +111,11 @@ export default function DetailModal({
                   </div>
                 </div>
 
-                {/* Dokumen PDF */}
-                <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <FileText className="w-5 h-5 text-indigo-600 shrink-0" />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
-                      Dokumen PDF
-                    </p>
-                    {isPdfValid ? (
-                      <a
-                        href={mhs.urlPdf}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm text-slate-700 font-medium hover:text-indigo-600 flex items-center gap-1 w-fit group/link"
-                      >
-                        <span className="truncate">Lihat Laporan Lengkap</span>
-                        <ExternalLink className="w-3 h-3 shrink-0 opacity-50 group-hover/link:opacity-100" />
-                      </a>
-                    ) : (
-                      <p className="text-sm text-slate-400 italic">
-                        Belum tersedia
-                      </p>
-                    )}
-                  </div>
+                {/* Catatan Tambahan (Opsional) */}
+                <div className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
+                   <p className="text-xs text-indigo-700 leading-relaxed">
+                     Informasi di atas merupakan data resmi mahasiswa yang terdaftar dalam sistem.
+                   </p>
                 </div>
               </div>
 

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { Mahasiswa } from "@/types";
 import { StatsCard } from "./StatsCard";
+import { FileText, ExternalLink } from "lucide-react"; // Import ikon tambahan
+
 interface HeaderProps {
   dataMahasiswa: Mahasiswa[];
 }
@@ -15,10 +17,7 @@ export default function Header({ dataMahasiswa }: HeaderProps) {
     mhs.urlWebsite && mhs.urlWebsite !== "#" && !mhs.urlWebsite.includes("example.com")
   ).length;
 
-  const countPdf = dataMahasiswa.filter(mhs => mhs.urlPdf && mhs.urlPdf !== "#").length;
-
   const percentWeb = total > 0 ? Math.round((countWeb / total) * 100) : 0;
-  const percentPdf = total > 0 ? Math.round((countPdf / total) * 100) : 0;
 
   return (
     <header className="mb-12">
@@ -38,26 +37,40 @@ export default function Header({ dataMahasiswa }: HeaderProps) {
 
       {/* Hero Section */}
       <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl mb-6">
+        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl mb-4">
           Portfolio UAS Mahasiswa
         </h1>
+
+        {/* --- TOMBOL PDF BESAR --- */}
+        <div className="mb-8 px-4 sm:px-0">
+          <a 
+            href="https://drive.google.com/drive/u/0/folders/1bgZORN70UdP35NQheJ_JJWf8z_R2Benh?ths=true" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center gap-3 w-full max-w-md bg-linear-to-r from-emerald-600 to-teal-500 p-4 rounded-2xl text-white shadow-lg shadow-emerald-200 hover:shadow-emerald-400/40 hover:-translate-y-1 transition-all duration-300"
+          >
+            <div className="p-2 bg-white/20 rounded-lg group-hover:scale-110 transition-transform">
+              <FileText className="w-6 h-6 sm:w-7 sm:h-7" />
+            </div>
+            <div className="text-left">
+              <p className="text-[10px] uppercase font-bold opacity-80 leading-none mb-1">Google Drive</p>
+              <h2 className="text-base sm:text-lg font-bold leading-none">Lihat Kumpulan Laporan PDF</h2>
+            </div>
+            <ExternalLink className="ml-2 w-5 h-5 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+          </a>
+        </div>
         
         {/* Kontainer Stats */}
-        <div className="flex flex-row gap-4 max-w-md mx-auto mb-8">
-          <StatsCard 
-            label="Website" 
-            percentage={percentWeb} 
-            count={countWeb} 
-            total={total} 
-            color="indigo" 
-          />
-          <StatsCard 
-            label="Laporan PDF" 
-            percentage={percentPdf} 
-            count={countPdf} 
-            total={total} 
-            color="emerald" 
-          />
+        <div className="flex justify-center mb-8">
+          <div className="w-full max-w-60">
+            <StatsCard 
+              label="Progres Website" 
+              percentage={percentWeb} 
+              count={countWeb} 
+              total={total} 
+              color="indigo" 
+            />
+          </div>
         </div>
 
         <p className="text-lg text-slate-600">

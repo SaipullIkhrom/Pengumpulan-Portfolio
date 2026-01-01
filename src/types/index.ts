@@ -3,5 +3,4 @@ export interface Mahasiswa {
   nama: string;
   nim: string;
   urlWebsite: string;
-  urlPdf: string;
 }

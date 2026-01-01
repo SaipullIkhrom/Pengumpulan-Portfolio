@@ -10,20 +10,21 @@ import Footer from "@/components/navigation/Footer";
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
- const filteredMahasiswa = daftarMahasiswa.filter((mhs) => {
-  const s = searchTerm.toLowerCase();
-  return (
-    mhs.nama.toLowerCase().includes(s) || 
-    mhs.nim.toLowerCase().includes(s) 
-  );
-});
+  const filteredMahasiswa = daftarMahasiswa.filter((mhs) => {
+    const s = searchTerm.toLowerCase();
+    return (
+      mhs.nama.toLowerCase().includes(s) || 
+      mhs.nim.toLowerCase().includes(s) 
+    );
+  });
 
-return (
+  return (
     <main className="min-h-screen bg-slate-50 py-16 px-6">
       <div className="max-w-7xl mx-auto space-y-12">
-       <Header dataMahasiswa={daftarMahasiswa} />
+        <Header dataMahasiswa={daftarMahasiswa} />
         <SearchBar value={searchTerm} onChange={setSearchTerm} />
         <MahasiswaGrid data={filteredMahasiswa} searchTerm={searchTerm} />
+        
         <Footer />
       </div>
     </main>

@@ -119,7 +119,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 20,
     nama: "MARIO ABEDNEGO SIANIPAR",
     nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO20",
+    urlWebsite: "https://mariorio6767.github.io/TUGAS-UAS-/",
   },
   {
     id: 21,

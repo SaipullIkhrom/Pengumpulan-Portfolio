@@ -146,7 +146,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     nama: "MUHAMMAD ANGGARA PANDU WIJAYA",
     nim: "251011700519",
     urlWebsite: "https://chaazzel.github.io/PWEB-1/",
-    urlPdf: "#",
+    urlPdf: "/pdf/UAS_251011700519_Muhammad_Anggara_Pandu_Wijaya.pdf",
   },
   {
     id: 22,

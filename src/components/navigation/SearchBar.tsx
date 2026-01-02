@@ -11,7 +11,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
       <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
         <Search className="h-5 w-5 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
       </div>
-      
+
       <input
         type="text"
         placeholder="Cari nama atau NIM mahasiswa..."

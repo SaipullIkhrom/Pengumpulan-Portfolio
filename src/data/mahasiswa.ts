@@ -4,8 +4,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 1,
     nama: "ABHI ARBIAN",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO1",
+    nim: "251011700527",
+    urlWebsite: "https://abhiarbian06.github.io/Bia-Bio-s-Website-Portofolio/",
   },
   {
     id: 2,

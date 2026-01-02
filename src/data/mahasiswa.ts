@@ -77,7 +77,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 13,
     nama: "FAYASHA NADIRA PADRI",
     nim: "251011700523",
-    urlWebsite: "https://fayahsanadira.github.io/Portofolio-Fayashanadirapadri/",
+    urlWebsite: "https://fayahsanadira.github.io/Portofolio-/",
   },
   {
     id: 14,
@@ -106,8 +106,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 18,
     nama: "INTAN NOFITA SARI",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO18",
+    nim: "251011700532",
+    urlWebsite: "https://nofitasaryintan-glitch.github.io/novita/",
   },
   {
     id: 19,

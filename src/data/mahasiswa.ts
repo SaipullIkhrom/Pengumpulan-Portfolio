@@ -82,8 +82,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 14,
     nama: "FEBRONIA THERESIA WATRATAN",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO14",
+    nim: "251011700517",
+    urlWebsite: "https://febywatratan07.github.io/portofolio-website/",
   },
   {
     id: 15,

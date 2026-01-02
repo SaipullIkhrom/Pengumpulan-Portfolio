@@ -10,8 +10,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 2,
     nama: "ABYAN HILABI LATANZA",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO2",
+    nim: "251011700531",
+    urlWebsite: "https://abyanhilabilatanza.github.io/UAS-PWEB1/",
   },
   {
     id: 3,
@@ -136,8 +136,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 23,
     nama: "MUHAMMAD IBNI FAOZAN",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO23",
+    nim: "251011700558",
+    urlWebsite: "https://faozanpx07-pixel.github.io/-_-/",
   },
   {
     id: 24,

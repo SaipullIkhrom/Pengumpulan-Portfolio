@@ -166,8 +166,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 28,
     nama: "RIMBA ASMORO",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO27",
+    nim: "251011700543",
+    urlWebsite: "https://rimban.github.io/",
   },
   {
     id: 29,

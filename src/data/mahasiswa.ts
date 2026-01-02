@@ -100,8 +100,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 17,
     nama: "INDA DOLO",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO17",
+    nim: "251011701266",
+    urlWebsite: "https://indahdolo16102006-oss.github.io/WEBUAS/",
   },
   {
     id: 18,
@@ -178,8 +178,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 30,
     nama: "STEVEN PUTRA SAVA MARYANO",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO29",
+    nim: "251011700522",
+    urlWebsite: "https://manusiasetengahsadar.github.io/myportfolio/",
   },
   {
     id: 31,

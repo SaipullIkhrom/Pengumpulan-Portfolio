@@ -29,7 +29,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 5,
     nama: "AHMAD GOZALI",
     nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO5",
+    urlWebsite: "https://ahmadgozali9307-ship-it.github.io/gzl/",
   },
   {
     id: 6,

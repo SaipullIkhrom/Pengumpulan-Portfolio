@@ -70,8 +70,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 12,
     nama: "DIVA ANINDITYA PUTRI PAHLEVI",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO12",
+    nim: "251011700536",
+    urlWebsite: "https://divaaninditya.github.io/uasdiva/",
   },
   {
     id: 13,

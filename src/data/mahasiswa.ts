@@ -23,7 +23,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 4,
     nama: "ADITYO FEBRUANSYAH",
     nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO4",
+    urlWebsite: "https://adityofebruansyah-ops.github.io/ADITYO-FEBRUANSYAH/",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 8,
     nama: "ALDO FERIANSYAH",
     nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO8",
+    urlWebsite: "https://aldobhedoea802-png.github.io/PORTFOLIO-UAS/",
   },
   {
     id: 9,
@@ -64,8 +64,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 11,
     nama: "DHIYAUL AULIYAH JADID",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO11",
+    nim: "251011700503",
+    urlWebsite: "https://dhiyauljadid.github.io/website-test/",
   },
   {
     id: 12,
@@ -95,7 +95,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 16,
     nama: "HANI ULANDARI",
     nim: "251011700506",
-    urlWebsite: "#",
+    urlWebsite: "https://anakraja887-eng.github.io/web-hans/",
   },
   {
     id: 17,
@@ -184,8 +184,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 31,
     nama: "TEUKU RIFQI AUNUR RAHMAN NURMALIK",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO30",
+    nim: "251011701284",
+    urlWebsite: "https://teukurifqi.github.io/link-teuku-rifqi/",
   },
   {
     id: 32,

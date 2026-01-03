@@ -22,7 +22,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 4,
     nama: "ADITYO FEBRUANSYAH",
-    nim: "12345678",
+    nim: "251011700520",
     urlWebsite: "https://adityofebruansyah-ops.github.io/ADITYO-FEBRUANSYAH/",
   },
   {
@@ -172,8 +172,8 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 29,
     nama: "RIZAL ANANTA PRAMUDYA",
-    nim: "12345678",
-    urlWebsite: "https://example.com/PORTFOLIO28",
+    nim: "251011700548",
+    urlWebsite: "https://rijang2646.github.io/portrizal/",
   },
   {
     id: 30,

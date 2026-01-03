@@ -38,7 +38,7 @@ export default function Header({ dataMahasiswa }: HeaderProps) {
       {/* Hero Section */}
       <div className="text-center max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl mb-4">
-          Portfolio UAS Mahasiswa
+          Portfolio UAS PWEB 1
         </h1>
 
         {/* --- TOMBOL PDF BESAR --- */}

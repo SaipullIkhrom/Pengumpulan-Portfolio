@@ -59,7 +59,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
     id: 10,
     nama: "BAGAS RADITYA NUGRAHA",
     nim: "251011700538",
-    urlWebsite: "https://example.com/PORTFOLIO10",
+    urlWebsite: "https://radityanugraha186-bit.github.io/portfolio-uas/",
   },
   {
     id: 11,

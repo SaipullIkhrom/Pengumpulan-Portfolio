@@ -46,7 +46,7 @@ export const daftarMahasiswa: Mahasiswa[] = [
   {
     id: 8,
     nama: "ALDO FERIANSYAH",
-    nim: "12345678",
+    nim: "251011700564",
     urlWebsite: "https://aldobhedoea802-png.github.io/PORTFOLIO-UAS/",
   },
   {
